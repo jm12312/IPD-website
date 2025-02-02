@@ -125,7 +125,7 @@ const AudioEmotionAnalyzer = () => {
       const formData = new FormData();
       formData.append('audio_file', file);
 
-      const response = await axios.post('http://127.0.0.1:5003/audio/emotions', formData, {
+      const response = await axios.post('https://ipd-website.onrender.com/audio/emotions', formData, {
         headers: {
           'Content-Type': 'multipart/form-data' // Axios should automatically set this for you
         }
